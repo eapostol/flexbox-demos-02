@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  font-size: 20px;
-  padding: 0 20px 40px;
+  font-size: 1.3em;
+  padding: 0 2em 3em;
   line-height: 1.4;
 }
 
@@ -31,17 +31,18 @@ code {
 }
 
 label {
-  margin-right: .8em;
+  margin-right: 1.3em;
   padding: 8px;
 }
 
 .container {
+  min-height: 500px;
   border: solid 2px;
+  margin-bottom: 1em;
   background: #b2d5ff;
-  min-height: 660px;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .ltr {
@@ -52,35 +53,44 @@ label {
   direction: rtl;
 }
 
+.auto {
+  align-items: auto;
+}
+
 .flex-start {
-  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .flex-end {
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .center {
-  justify-content: center;
+  align-items: center;
 }
 
-.space-between {
-  justify-content: space-between;
+.baseline {
+  align-items: baseline;
 }
 
-.space-around {
-  justify-content: space-around;
+.stretch {
+  align-items: stretch;
 }
 
 .item {
-  width: 15%;
+  min-width: 15%;
   background: #007ed3;
   min-height: 100px;
   border: solid 2px #305077;
-  margin: 5px;
+  margin: 4px;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   color: white;
   font-weight: bold;
   line-height: 1.4;
+}
+
+.large {
+  height: 160px;
+  line-height: 3;
 }
