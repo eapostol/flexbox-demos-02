@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 20px;
-  padding: 0 20px;
+  padding: 0 20px 40px;
   line-height: 1.4;
 }
 
@@ -38,8 +38,10 @@ label {
 .container {
   border: solid 2px;
   background: #b2d5ff;
+  min-height: 660px;
   display: flex;
-  margin-bottom: 1em;
+  flex-direction: column;
+  margin: 0 auto 1em;
 }
 
 .ltr {
