@@ -36,7 +36,7 @@ label {
 }
 
 .container {
-  min-height: 300px;
+  min-height: 500px;
   border: solid 2px;
   margin-bottom: 1em;
   background: #b2d5ff;
@@ -58,39 +58,41 @@ label {
 }
 
 .flex-start {
-  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .flex-end {
-  align-items: flex-end;
+  align-content: flex-end;
 }
 
 .center {
-  align-items: center;
-}
-
-.baseline {
-  align-items: baseline;
+  align-content: center;
 }
 
 .stretch {
-  align-items: stretch;
+  align-content: stretch;
+}
+
+.space-between {
+  align-content: space-between;
+}
+
+.space-around {
+  align-content: space-around;
 }
 
 .item {
   min-width: 15%;
   background: #007ed3;
-  min-height: 100px;
   border: solid 2px #305077;
-  margin: 3px;
+  margin: 4px;
   text-align: center;
   font-size: 3em;
   color: white;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 2.4;
 }
 
 .large {
   height: 160px;
-  line-height: 3;
 }
