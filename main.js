@@ -1,9 +1,15 @@
-let container = document.querySelector('.container'),
-    dirs = document.querySelector('.dir').querySelectorAll('input');
+let btns = document.querySelector('.btns').querySelectorAll('input'),
+    dirs = document.querySelector('.dir').querySelectorAll('input'),
+    container = document.querySelector('.container');
 
-document.querySelector('button').addEventListener('click', function () {
-  container.classList.toggle('flexcontainer');
-}, false);
+for (i of btns) {
+  (function(i) {
+    i.addEventListener('click', function() {
+      clearClasses(container, btns);
+      container.classList.add(i.value);
+    }, false);
+  })(i);
+}
 
 for (i of dirs) {
   (function(i) {

@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  font-size: 20px;
-  padding: 0 20px 30px 0;
+  font-size: 1.3em;
+  padding: 0 2em 3em;
   line-height: 1.4;
 }
 
@@ -12,6 +12,7 @@ main {
 
 h2 {
   text-align: center;
+  margin-top: 14px;
 }
 
 code {
@@ -21,29 +22,8 @@ code {
 }
 
 .btns {
+  padding-bottom: 1em;
   text-align: center;
-}
-
-button {
-  margin: 0 auto 1em;
-}
-
-.container {
-  border: solid 2px;
-  background: #b2d5ff;
-  margin-bottom: 1em;
-}
-
-.flexcontainer {
-  display: flex;
-}
-
-.ltr {
-  direction: ltr;
-}
-
-.rtl {
-  direction: rtl;
 }
 
 .dir {
@@ -55,7 +35,39 @@ label {
   padding: 8px;
 }
 
+.container {
+  border: solid 2px;
+  margin-bottom: 1em;
+  background: #b2d5ff;
+  display: flex;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
 .item {
+  width: 15%;
   background: #007ed3;
   min-height: 100px;
   border: solid 2px #305077;

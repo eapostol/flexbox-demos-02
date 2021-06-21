@@ -5,10 +5,12 @@
 </head>
 <body>
 <main>
-    <h2>Toggling a Flex Container</h2>
-    <p>The container element (light blue background) has 5 child elements. Press the button to toggle it between <code>display: block</code> and <code>display: flex</code>. There are no other flex-related properties applied to the elements.</p>
+    <h2>Determining the Direction of the Flex Container: <code>flex-direction</code></h2>
     <div class="btns">
-        <button>Toggle Flex Container</button>
+        <label for="row">row <input type="radio" name="flexdirection" value="row" id="row" checked></label>
+        <label for="row-reverse">row-reverse <input type="radio" name="flexdirection"  value="row-reverse" id="row-reverse"></label>
+        <label for="column">column <input type="radio" name="flexdirection"  value="column" id="column"></label>
+        <label for="column-reverse">column-reverse <input type="radio" name="flexdirection"  value="column-reverse" id="column-reverse"></label>
     </div>
     <div class="container">
         <div class="item">1</div>
