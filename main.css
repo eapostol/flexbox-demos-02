@@ -10,9 +10,17 @@ main {
   margin: 0 auto;
 }
 
+::selection {
+  background-color: lightpink;
+}
+
+::-moz-selection {
+  background-color: lightpink;
+}
+
 h2 {
-  text-align: center;
   margin-top: 14px;
+  text-align: center;
 }
 
 code {
@@ -37,9 +45,9 @@ label {
 
 .container {
   border: solid 2px;
-  margin-bottom: 1em;
   background: #b2d5ff;
   display: flex;
+  margin-bottom: 1em;
 }
 
 .ltr {
@@ -50,20 +58,16 @@ label {
   direction: rtl;
 }
 
-.row {
-  flex-direction: row;
+.nowrap {
+  flex-wrap: nowrap;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
+.wrap {
+  flex-wrap: wrap;
 }
 
-.column {
-  flex-direction: column;
-}
-
-.column-reverse {
-  flex-direction: column-reverse;
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .item {
