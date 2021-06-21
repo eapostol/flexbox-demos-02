@@ -36,47 +36,13 @@ label {
 }
 
 .container {
-  min-height: 300px;
+  min-height: 500px;
   border: solid 2px;
   margin-bottom: 1em;
   background: #b2d5ff;
   display: flex;
-}
-
-.one .item:nth-child(1) {
-  order: 1;
-}
-
-.one .item:nth-child(2) {
-  order: 2;
-}
-
-.one .item:nth-child(3) {
-  order: 3;
-}
-
-.two .item:nth-child(1) {
-  order: 2;
-}
-
-.two .item:nth-child(2) {
-  order: 1;
-}
-
-.two .item:nth-child(3) {
-  order: 3;
-}
-
-.three .item:nth-child(1) {
-  order: 3;
-}
-
-.three .item:nth-child(2) {
-  order: 1;
-}
-
-.three .item:nth-child(3) {
-  order: 2;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .ltr {
@@ -87,15 +53,67 @@ label {
   direction: rtl;
 }
 
+.one {
+  order: 1;
+}
+
+.two {
+  order: 2;
+}
+
+.three {
+  order: 3;
+}
+
+.four {
+  order: 4;
+}
+
+.five {
+  order: 5;
+}
+
+.six {
+  order: 6;
+}
+
+.seven {
+  order: 7;
+}
+
+.eight {
+  order: 8;
+}
+
+.nine {
+  order: 9;
+}
+
+.ten {
+  order: 10;
+}
+
+.eleven {
+  order: 11;
+}
+
+.twelve {
+  order: 12;
+}
+
 .item {
+  min-width: 15%;
   background: #007ed3;
-  width: 33.3%;
   min-height: 100px;
-  margin: .073em;
+  margin: .060em;
   border: solid 2px #305077;
   text-align: center;
   font-size: 3em;
   color: white;
   font-weight: bold;
   line-height: 1.4;
+}
+
+.extra {
+  background: pink;
 }

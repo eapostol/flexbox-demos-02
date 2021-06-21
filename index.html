@@ -5,16 +5,31 @@
 </head>
 <body>
 <main>
-    <h2>Changing the Order of Flex Items: <br><code>order</code></h2>
+    <h2>Understanding Complex Ordering: <code>order</code></h2>
+    <p>The differently-colored flex item changes its order depending on what's selected. The rest of the items have an <code>order</code> value equal to the numbers shown.</p>
     <div class="btns">
-        <label for="one">Layout 1 <input type="radio" name="order"  value="one" id="one" checked></label>
-        <label for="two">Layout 2 <input type="radio" name="order"  value="two" id="two"></label>
-        <label for="three">Layout 3 <input type="radio" name="order"  value="three" id="three"></label>
+        <label for="one">1 <input type="radio" name="order"  value="one" id="one" checked></label>
+        <label for="two">2 <input type="radio" name="order"  value="two" id="two"></label>
+        <label for="three">3 <input type="radio" name="order"  value="three" id="three"></label>
+        <label for="four">4 <input type="radio" name="order"  value="four" id="four"></label>
+        <label for="five">5 <input type="radio" name="order"  value="five" id="five"></label>
+        <label for="six">6 <input type="radio" name="order"  value="six" id="six"></label>
+        <label for="seven">7 <input type="radio" name="order"  value="seven" id="seven"></label>
+        <label for="eight">8 <input type="radio" name="order"  value="eight" id="eight"></label>
     </div>
-    <div class="container one">
-        <div class="item" style="background-color: red">1</div>
-        <div class="item" style="background-color: green">2</div>
-        <div class="item" style="background-color: blue">3</div>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+        <div class="item five extra">5</div>
+        <div class="item six">6</div>
+        <div class="item seven">7</div>
+        <div class="item eight">8</div>
+        <div class="item nine">9</div>
+        <div class="item ten">10</div>
+        <div class="item eleven">11</div>
+        <div class="item twelve">12</div>
     </div>
     <div class="dir">
         <label for="ltr">left-to-right <input type="radio" value="ltr" name="direction" id="ltr" checked></label>
