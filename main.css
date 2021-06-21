@@ -1,21 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  font-size: 1.3em;
-  padding: 0 2em 3em;
+  font-size: 20px;
+  padding: 0 20px;
   line-height: 1.4;
 }
 
 main {
   max-width: 800px;
   margin: 0 auto;
-}
-
-::selection {
-  background-color: lightpink;
-}
-
-::-moz-selection {
-  background-color: lightpink;
 }
 
 h2 {
@@ -39,7 +31,7 @@ code {
 }
 
 label {
-  margin-right: 1.3em;
+  margin-right: 1em;
   padding: 8px;
 }
 
@@ -58,16 +50,24 @@ label {
   direction: rtl;
 }
 
-.nowrap {
-  flex-wrap: nowrap;
+.flex-start {
+  justify-content: flex-start;
 }
 
-.wrap {
-  flex-wrap: wrap;
+.flex-end {
+  justify-content: flex-end;
 }
 
-.wrap-reverse {
-  flex-wrap: wrap-reverse;
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
 }
 
 .item {
