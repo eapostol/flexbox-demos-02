@@ -54,7 +54,7 @@ label {
 }
 
 .auto {
-  align-items: auto;
+  align-items: normal;
 }
 
 .flex-start {
