@@ -5,15 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vertical Centering with Flexbox</title>
+    <title>Sticky Footer with Flexbox</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h2>Vertical Centering with Flexbox</h2>
-    <p>Both the container and the child element are resizable using a bottom-right handle. Try resizing either of them. The child box will remain vertically and horizontally centered inside the parent.</p>
-
-    <main class="container">
-        <div class="item"><p>Try resizing this element or the container.</p></div>
-    </main>
+<header><h2>Sticky Footer with Flexbox</h2></header>
+<main>
+    <button>Add Paragraph</button> <button>Remove Paragraph</button>
+    <p>This page is using a typical header/footer combo. The footer is positioned using flexbox so that it stays at the bottom of the page even if the content doesn't fill the entire page vertically. If this content goes past the length of the page, the footer will behave like a regular footer and will continue to get pushed down. Therefore it will only stay at the bottom of the viewport when the content is less than the height of the viewport. Use the buttons above to add or remove extra paragraphs so you can see how the footer responds.</p>
+</main>
+<footer><h2>Sticky Footer</h2></footer>
+<script src="main.js"></script>
 </body>
 </html>
