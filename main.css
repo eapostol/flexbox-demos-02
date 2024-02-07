@@ -5,72 +5,47 @@ body {
   line-height: 1.4;
 }
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 h2 {
   margin-top: 14px;
   text-align: center;
 }
 
-code {
-  font-family: Consolas, monospace;
-  background: #ccc;
-  padding: 1px 3px;
-}
-
-.btns {
-  text-align: center;
-}
-
-.btns input {
-  width: 75px;
-  display: block;
-  margin: 12px auto 0;
-}
-
-.dir {
-  text-align: center;
-}
-
-label {
-  margin-right: 1.3em;
-  padding: 8px;
-}
-
 .container {
-  min-height: 200px;
-  border: solid 2px;
-  margin-bottom: 1em;
-  background: #b2d5ff;
   display: flex;
-}
-
-.ltr {
-  direction: ltr;
-}
-
-.rtl {
-  direction: rtl;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+  min-height: 90px;
+  min-width: 440px;
+  height: 400px;
+  padding: 1em;
+  border: solid 2px;
+  resize: both;
+  overflow: auto;
 }
 
 .item {
-  width: 15%;
-  background: #007ed3;
-  border: solid 2px #305077;
-  margin: 5px;
+  background: pink;
+  max-width: 60%;
+  min-width: 400px;
+  min-height: 2em;
   text-align: center;
-  font-size: 3em;
-  color: white;
-  font-weight: bold;
-  line-height: 2.4;
-  flex-grow: 1;
+  resize: both;
+  overflow: hidden;
+  border: solid 2px;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.extra {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
+.item p {
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .container, .item {
+    min-width: auto;
+  }
 }

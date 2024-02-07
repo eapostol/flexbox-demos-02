@@ -1,24 +1,19 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Introduction to Flexbox CSS</title>
-    <link type="text/css" rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vertical Centering with Flexbox</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<main>
-    <h2>Defining Relative Growth of Flex Items: <br><code>flex-grow</code></h2>
-    <div class="btns">
-        <label for="flexgrow">Set the <code>flex-grow</code> property for flex item #2:<br><input type="number" value="0" min="0" max="30" step="1" id="flexgrow"></label>
-    </div>
-    <div class="container">
-        <div class="item">1</div>
-        <div class="item extra">2</div>
-        <div class="item">3</div>
-    </div>
-    <div class="dir">
-        <label for="ltr">left-to-right <input type="radio" value="ltr" name="direction" id="ltr" checked></label>
-        <label for="rtl">right-to-left <input type="radio" value="rtl" name="direction" id="rtl"></label>
-    </div>
-</main>
-<script lang="javascript" type="text/javascript" src="main.js"></script>
+    <h2>Vertical Centering with Flexbox</h2>
+    <p>Both the container and the child element are resizable using a bottom-right handle. Try resizing either of them. The child box will remain vertically and horizontally centered inside the parent.</p>
+
+    <main class="container">
+        <div class="item"><p>Try resizing this element or the container.</p></div>
+    </main>
 </body>
 </html>
