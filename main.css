@@ -22,8 +22,13 @@ code {
 }
 
 .btns {
-  padding-bottom: 1em;
   text-align: center;
+}
+
+.btns input {
+  width: 75px;
+  display: block;
+  margin: 12px auto 0;
 }
 
 .dir {
@@ -36,47 +41,12 @@ label {
 }
 
 .container {
-  min-height: 300px;
+  min-height: 200px;
   border: solid 2px;
   margin-bottom: 1em;
   background: #b2d5ff;
   display: flex;
-}
-
-.one .item:nth-child(1) {
-  order: 1;
-}
-
-.one .item:nth-child(2) {
-  order: 2;
-}
-
-.one .item:nth-child(3) {
-  order: 3;
-}
-
-.two .item:nth-child(1) {
-  order: 2;
-}
-
-.two .item:nth-child(2) {
-  order: 1;
-}
-
-.two .item:nth-child(3) {
-  order: 3;
-}
-
-.three .item:nth-child(1) {
-  order: 3;
-}
-
-.three .item:nth-child(2) {
-  order: 1;
-}
-
-.three .item:nth-child(3) {
-  order: 2;
+  justify-content: center;
 }
 
 .ltr {
@@ -88,14 +58,23 @@ label {
 }
 
 .item {
+  width: 15%;
   background: #007ed3;
-  width: 33.3%;
-  min-height: 100px;
-  margin: .073em;
   border: solid 2px #305077;
+  margin: 5px;
   text-align: center;
   font-size: 3em;
   color: white;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 2.4;
+}
+
+.extra {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.large {
+  height: 160px;
 }
