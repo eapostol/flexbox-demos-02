@@ -46,7 +46,6 @@ label {
   margin-bottom: 1em;
   background: #b2d5ff;
   display: flex;
-  justify-content: center;
 }
 
 .ltr {
@@ -67,14 +66,11 @@ label {
   color: white;
   font-weight: bold;
   line-height: 2.4;
+  flex-grow: 1;
 }
 
 .extra {
   flex-basis: auto;
   flex-grow: 0;
   flex-shrink: 1;
-}
-
-.large {
-  height: 160px;
 }

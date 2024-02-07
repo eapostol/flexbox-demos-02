@@ -1,13 +1,12 @@
 let input = document.querySelector('.btns').querySelector('input'),
     dirs = document.querySelector('.dir').querySelectorAll('input'),
     container = document.querySelector('.container'),
-    flexitem = document.querySelector('.extra');
+    flexitem = document.querySelector('.extra'), i;
 
 input.addEventListener('input', function() {
   flexitem.style.flexGrow = this.value;
 }, false);
 
-let i;
 for (i of dirs) {
   (function(i) {
     i.addEventListener('click', function() {
