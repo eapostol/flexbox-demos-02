@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <title>Introduction to Flexbox CSS</title>
+    <link type="text/css" rel="stylesheet" href="main-shrink.css">
+</head>
+<body>
+<main>
+    <h2>Defining Relative Growth of Flex Items: <br><code>flex-shrink</code></h2>
+    <div class="btns">
+        <p>All 3 flex items below have their <code>flex-grow</code> property set to <code>1</code> and the <code>flex-basis</code> property is set at <code>500px</code>. The middle flex item has a <code>flex-shrink</code> value of <code>0</code>.</p>
+        <label for="flexshrink">Increase the <code>flex-shrink</code> value for flex item #2:<br><input type="number" value="0" min="0" max="3" step="0.05" id="flexshrink"></label>
+    </div>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item extra">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="dir">
+        <label for="ltr">left-to-right <input type="radio" value="ltr" name="direction" id="ltr" checked></label>
+        <label for="rtl">right-to-left <input type="radio" value="rtl" name="direction" id="rtl"></label>
+    </div>
+</main>
+<script lang="javascript" type="text/javascript" src="main-shrink.js"></script>
+</body>
+</html>

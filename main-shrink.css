@@ -46,7 +46,6 @@ label {
   margin-bottom: 1em;
   background: #b2d5ff;
   display: flex;
-  justify-content: center;
 }
 
 .ltr {
@@ -58,7 +57,6 @@ label {
 }
 
 .item {
-  width: 15%;
   background: #007ed3;
   border: solid 2px #305077;
   margin: 5px;
@@ -67,14 +65,13 @@ label {
   color: white;
   font-weight: bold;
   line-height: 2.4;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 500px;
 }
 
 .extra {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-}
-
-.large {
-  height: 160px;
+  flex-basis: 500px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }

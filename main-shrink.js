@@ -4,7 +4,7 @@ let input = document.querySelector('.btns').querySelector('input'),
     flexitem = document.querySelector('.extra');
 
 input.addEventListener('input', function() {
-  flexitem.style.flexGrow = this.value;
+  flexitem.style.flexShrink = this.value;
 }, false);
 
 for (i of dirs) {
