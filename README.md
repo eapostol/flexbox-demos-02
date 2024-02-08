@@ -6,6 +6,8 @@ This repository contains a collection of demos for the Flexbox layout model.
 
 The demos are designed to be used as a reference for developers who are learning about Flexbox for the first time, or for those who want to refresh their knowledge.
 
+## How to use this repository
+
 To use this repo, you will have to 
 
 1. first `git clone` the repository in your git bash shell or mac terminal, and
@@ -33,4 +35,29 @@ The following is a list of the branches in this repository:
 10. 07-switch-flex-item-order 
 11. 08-flexibility-grow-shrink-basis 
 12. 09-flexibility-flex-grow
+
+Note the main files to explore are the changes made to the `index.html` and `main.css` files in each branch. The javascript file adds additional interactivity to the demos, and are not relevant to learning about Flexbox.
+
+## Key Concepts
+
+The key concepts covered in this repository include:
+
+1. Flex containers and items
+2. The `flex-direction` property
+3. The `flex-wrap` property
+4. The `justify-content` property
+5. The `align-items` property
+6. The `align-content` property
+7. The `order` property
+8. The `flex-grow` property
+9. The `flex-shrink` property
+10. The `flex-basis` property
+11. The `flex` shorthand property
+12. The `align-self` property
+13. The `flex` property
+
+The .css file will have a container class,
+called _flexcontainer_ which will set whatever HTML element it is applied to as a flex container.
+The .css file will also have a class called _flexitem_
+which will set whatever HTML element it is applied to as a flex item.
 
